@@ -1,0 +1,10 @@
+<form>
+  <input type="search" name="query" [(ngModel)]="query" (keyup)="search()">
+  <div *ngFor="let listData of list">
+    {{listData}}
+  </div>
+  <!-- <div>
+    {{filterData}}
+  </div> -->
+  <button type="button" (click)="search()">Search</button>
+</form>
